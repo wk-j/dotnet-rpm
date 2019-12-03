@@ -21,8 +21,8 @@ services:
     volumes:
       - /sys/fs/cgroup:/sys/fs/cgroup:ro
 
-    stdin_open: true
-    tty: true
+    # stdin_open: true
+    # tty: true
 
     ports:
       - 5000:5000
