@@ -1,0 +1,15 @@
+<Project>
+    <PropertyGroup>
+        <TargetFramework>netcoreapp3.0</TargetFramework>
+        <RuntimeIdentifiers>linux-x64</RuntimeIdentifiers>
+        <InstallService>true</InstallService>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <None Update="MyWeb.service">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+            <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+        </None>
+    </ItemGroup>
+
+</Project>

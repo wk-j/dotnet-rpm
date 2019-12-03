@@ -1,0 +1,13 @@
+[Unit]
+Description=MyWeb
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=30
+UMask=022
+ExecStart=/usr/share/MyWeb/MyWeb
+WorkingDirectory=/usr/share/MyWeb
+
+[Install]
+WantedBy=multi-user.target

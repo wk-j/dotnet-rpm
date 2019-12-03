@@ -6,5 +6,23 @@ services:
       context: .
       dockerfile: Dockerfile
 
+    privileged: true
+
+    cap_add:
+      - SYS_ADMIN
+
+    security_opt:
+      - seccomp:unconfined
+
+    tmpfs:
+      - /run
+      - /run/lock
+
+    volumes:
+      - /sys/fs/cgroup:/sys/fs/cgroup:ro
+
     stdin_open: true
     tty: true
+
+    ports:
+      - 5000:5000
