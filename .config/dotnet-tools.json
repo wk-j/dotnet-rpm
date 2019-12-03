@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "isRoot": true,
+  "tools": {
+    "dotnet-rpm": {
+      "version": "0.1.137",
+      "commands": [
+        "dotnet-rpm"
+      ]
+    }
+  }
+}
